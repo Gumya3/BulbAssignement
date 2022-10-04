@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./bulb.css">
+    <title>Bulb</title>
+</head>
+<body>
+    <div id="app">
+        <div class="container">
+            <div class="row" text-align:>
+                
+                <div class="col">
+                    <h1 v-if="switchButton">
+                        <img src="./on.jpg" alt="on">
+                    </h1>
+                    <h1 v-else>
+                        <img src="./off.jpg" alt="off">
+                    </h1>
+                    <button v-on:click="switchBtn" class="btn btn-success">ON/OFF</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <script src="./bootstrap.min.js"></script>
+    <script src="./vue.js"></script>
+    <script src="./bulb.js"></script>
+</body>
+</html>
